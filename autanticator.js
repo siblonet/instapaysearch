@@ -20,7 +20,9 @@ async function Inscription() {
     const confirm = document.getElementById('confirm').value;
 
     if (fname != "" && lname != "" && password != "") {
+
         if (password === confirm) {
+        document.getElementById('connexion').innerHTML = "En cours ...";
 
 
             const person = {
@@ -46,6 +48,7 @@ async function Inscription() {
                 setTimeout(() => {
                     document.getElementById('messago').innerHTML = ``;
                 }, 17000);
+                document.getElementById('connexion').innerHTML = "S'inscrire";
 
             } else if (response && response.token) {
 
@@ -94,6 +97,8 @@ async function loGin() {
     const password = document.getElementById('password').value;
 
     if (phone != "" && password != "") {
+        document.getElementById('connexion').innerHTML = "En cours ...";
+
         const person = {
             phone: phone,
             motdepass: password,
