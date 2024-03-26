@@ -3,7 +3,10 @@ function getAdmin() {
     if (token) {
         const splo = token.split("°");
         console.log(splo[4]);
-        window.location.href = "/";
+        if (splo[4] !== "GIFV") {
+            window.location.href = "/";
+
+        }
         return splo[4] == "GIFV" ? true : false
     }
     window.location.href = "/";
