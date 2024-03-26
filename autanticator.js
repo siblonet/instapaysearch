@@ -13,11 +13,11 @@ getAdmin();*/
 
 async function Inscription() {
 
-    const fname = document.getElementById('fname').value;
-    const lname = document.getElementById('lname').value;
-    const phone = document.getElementById('phonea').value;
+    const fname = document.getElementById('first_name').value;
+    const lname = document.getElementById('last_name').value;
+    const phone = document.getElementById('phone').value;
     const password = document.getElementById('password').value;
-    const confirm = document.getElementById('confirm').value;
+    const confirm = document.getElementById('passwordconfir').value;
 
     if (fname != "" && lname != "" && password != "") {
 
@@ -34,7 +34,7 @@ async function Inscription() {
             };
 
 
-            const response = await requesttoBackendJson('POST', `${baseurl}/instapay`, person);
+            const response = await requesttoBackendJson('POST', `${baseurl}instapay`, person);
             if (response && response.ee) {
                 const focusedElement = document.activeElement;
 
@@ -73,6 +73,8 @@ async function Inscription() {
                 setTimeout(() => {
                     document.getElementById('messago').innerHTML = ``;
                 }, 17000);
+                document.getElementById('connexion').innerHTML = "S'inscrire";
+
             }
         } else {
             const focusedElement = document.activeElement;
@@ -87,6 +89,8 @@ async function Inscription() {
             setTimeout(() => {
                 document.getElementById('messago').innerHTML = ``;
             }, 17000);
+            document.getElementById('connexion').innerHTML = "S'inscrire";
+
         }
     }
 };
@@ -104,7 +108,7 @@ async function loGin() {
             motdepass: password,
         };
 
-        const response = await requesttoBackendJson('POST', `${baseurl}/instapay/login/instapay`, person);
+        const response = await requesttoBackendJson('POST', `${devHost}instapay/login/instapay`, person);
 
         if (response && response.ee) {
             const focusedElement = document.activeElement;
@@ -142,6 +146,8 @@ async function loGin() {
             setTimeout(() => {
                 document.getElementById('messago').innerHTML = ``;
             }, 17000);
+            document.getElementById('connexion').innerHTML = "Connexion";
+
         }
     }
 
