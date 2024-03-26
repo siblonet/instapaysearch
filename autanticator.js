@@ -40,7 +40,7 @@ async function Inscription() {
             } else if (response && response.token) {
 
                 sessionStorage.setItem('tibule', response.token);
-                sessionStorage.setItem('oneci', response.instapaytoken);
+                localStorage.setItem('oneci', response.instapaytoken);
 
 
                 const splo = response.token.split("°");
@@ -113,7 +113,7 @@ async function loGin() {
 
         } else if (response && response.token) {
             sessionStorage.setItem('tibule', response.token);
-            sessionStorage.setItem('oneci', response.instapaytoken);
+            localStorage.setItem('oneci', response.instapaytoken);
 
 
             const splo = response.token.split("°");
