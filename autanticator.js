@@ -1,4 +1,4 @@
-/*function getAdmin() {
+function getAdmin() {
     const token = sessionStorage.getItem('tibule');
     if (token) {
         const splo = token.split("°");
@@ -9,7 +9,7 @@
     window.location.href = "/";
     return false
 };
-getAdmin();*/
+getAdmin();
 
 async function Inscription() {
 
