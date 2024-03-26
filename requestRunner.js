@@ -33,7 +33,8 @@ const VerificatingAuthen = async () => {
         formData.append('MOTHER_BIRTH_DATE', '');
 
 
-        const response = await requesttoBackendFormat('POST', `${rnppUrl}/oneci/persons/${nni}/match`, token, formData);
+        //const response = await requesttoBackendFormat('POST', `${rnppUrl}/oneci/persons/${nni}/match`, token, formData);
+        const response = await requesttoBackendAtrubi('GET', `${rnppUrl}/oneci/persons/${nni}?attributeNames=FIRST_NAME&attributeNames=LAST_NAME&attributeNames=BIRTH_DATE&attributeNames=GENDER&attributeNames=BIRTH_COUNTRY`, token);
         const focusedElement = document.activeElement;
 
         if (focusedElement && ['INPUT', 'TEXTAREA'].includes(focusedElement.tagName)) {

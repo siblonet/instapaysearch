@@ -66,6 +66,26 @@ const requesttoBackendFormat = async (method, endpoint, BEARER_TOKEN, data = nul
 };
 
 
+
+const requesttoBackendAtrubi = async (method, endpoint, BEARER_TOKEN) => {
+    const options = {
+        method,
+        headers: {
+            'Authorization': `Bearer ${BEARER_TOKEN}`
+        }
+    };
+
+    const response = await fetch(endpoint, options);
+    const responseData = await response.json();
+
+    if (!response.ok) {
+        return false;
+    }
+
+    return responseData;
+};
+
+
 const requesttoBackendRaw = async (method, endpoint, data = null) => {
     const options = {
         method,
