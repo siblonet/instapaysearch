@@ -209,7 +209,7 @@
 }
 
 .searchBoar .inputBg {
-    width: 100%;
+    width: 150px;
     border-radius: 12px !important;
 }
 
@@ -238,7 +238,8 @@
     align-self: center;
     box-shadow: 0 6px 10px 0 rgba(9, 80, 80, 0.25);
     overflow: hidden;
-    display: none
+    display: none;
+    text-align: center;
 }
 
 .valideuser {
@@ -268,7 +269,7 @@
     opacity: 0.2;
     /* Adjust the opacity value (from 0 to 1) to decrease opacity */
     position: absolute;
-    height: 50px; 
+    height: 50px;
     width: 50px;
     align-self: flex-start;
 }
@@ -283,7 +284,7 @@
     opacity: 0.2;
     /* Adjust the opacity value (from 0 to 1) to decrease opacity */
     position: absolute;
-    height: 50px; 
+    height: 50px;
     width: 50px;
     align-self: flex-start;
     margin-left: 25%;
@@ -296,6 +297,44 @@
     }
 }
 
-.dropdown .lnr{
+.dropdown .lnr {
     padding-right: 12px !important;
+}
+
+
+#nni {
+    box-sizing: border-box;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#nni:focus {
+    width: 100%;
+}
+
+
+.searchBoar .fingerprin {
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #f3eeeeda;
+    border-radius: 50%;
+    padding: 2px;
+    box-shadow: 0 6px 10px 0 rgba(5, 66, 66, 0.418);
+    cursor: pointer;
+}
+
+.searchBoar .photo {
+    height: 33px;
+    width: 33px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px 0 rgba(9, 80, 80, 0.25);
+    cursor: pointer;
 }
