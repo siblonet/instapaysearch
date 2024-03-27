@@ -9,7 +9,7 @@ function getAdmin() {
         const phonee = thisiswhat(`${phonea}`);
 
         document.getElementById('userna').innerHTML = `<i class="lnr lnr-user"></i> ${username}`;
-        document.getElementById('userph').innerText = `<i class="lnr lnr-phone-handset"></i> ${phonee}`;
+        document.getElementById('userph').innerHTML = `<i class="lnr lnr-phone-handset"></i> ${phonee}`;
 
         if (splo[4] !== "GIFV") {
             window.location.href = "/";
