@@ -3615,9 +3615,9 @@ code::selection {
 .tg-site-header .tg-site-header-top {
 	padding: 10px 0;
 	background: #ff6900;
-	background: -moz-linear-gradient(left, #ff6900 0, #ffffff 50%, #028a61 100%);
-	background: -webkit-linear-gradient(left, #ff6900 0, #ffffff 50%, #028a61 100%);
-	background: linear-gradient(to right, #ff6900 0, #ffffff 50%, #028a61 100%)
+	background: -moz-linear-gradient(left, #ff6900 0, #ffffff 50%, #087752 100%);
+	background: -webkit-linear-gradient(left, #ff6900 0, #ffffff 50%, #087752 100%);
+	background: linear-gradient(to right, #ff6900 0, #ffffff 50%, #087752 100%)
 }
 
 .tg-site-header a.tp-latest-version,
