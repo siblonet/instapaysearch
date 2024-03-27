@@ -4,6 +4,7 @@ const Search = async () => {
     const nni = document.getElementById('nni').value;
 
     if (nni, token) {
+        document.getElementById('valideuser').style.display = "none"
         document.getElementById('messago').style.display = "block"
 
         document.getElementById('nni').blur();
