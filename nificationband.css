@@ -63,7 +63,7 @@
 
 @media only screen and (min-width: 530px) and (max-width: 900px) {
     .noticationmenu .allin .iconnotification span {
-        right: 15%;
+        right: 25%;
     }
 }
 
@@ -71,7 +71,7 @@
 
 @media (max-width: 530px) {
     .noticationmenu .allin .iconnotification span {
-        right: 20%;
+        right: 35%;
     }
 }
 
@@ -239,4 +239,11 @@
     box-shadow: 0 6px 10px 0 rgba(9, 80, 80, 0.25);
     overflow: hidden;
     display: none
+}
+
+
+@media (max-width: 620px) {
+    .searchBoar {
+        width: 100%;
+    }
 }
