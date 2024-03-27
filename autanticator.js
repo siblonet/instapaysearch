@@ -9,7 +9,7 @@ async function Inscription() {
     if (fname != "" && lname != "" && password != "") {
 
         if (password === confirm) {
-        document.getElementById('connexion').innerHTML = "En cours ...";
+            document.getElementById('connexion').innerHTML = "En cours ...";
 
 
             const person = {
@@ -138,4 +138,9 @@ async function loGin() {
         }
     }
 
+}
+
+const Disconnect = () => {
+    sessionStorage.clear();
+    window.location.href = "/";
 }

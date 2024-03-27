@@ -8,6 +8,7 @@
     <title>ONECI VÉRIFICATION D'IDENTITÉ</title>
     <meta name="author" content="John Kokar" />
     <link rel="stylesheet" href="searchstyle.css">
+    <link rel="stylesheet" href="nificationband.css">
     <meta name="theme-color" content="#ff5c00" />
 
     <style id='wp-block-library-theme-inline-css' type='text/css'></style>
@@ -56,10 +57,43 @@
                     </div>
                 </div>
             </div>
+            <div class="noticationmenu">
+                <a class="logoa">
+                    <img src="logo.png" style="height: 100%; width: 100%;" alt=""> <span>ONECI</span>
+                </a>
+
+                <div class="allin">
+                    <a class="iconnotification">
+                        <span>0</span>
+                        <img src="./asserts/not.png" style="height: 100%; width: 100%;" alt="">
+                        <div class="dropdowna">
+                            <p>Vous n'avez pas de notification</p>
+                        </div>
+                    </a>
+
+                    <a style="width: 50px;"></a>
+
+                    <a class="iconprofile">
+                        <img src="./asserts/avatay.png" style="height: 100%; width: 100%;" alt="">
+                        <div class="dropdown">
+                            <ul>
+                                <li id="userna"></li>
+                                <li id="userph"></li>
+                                <li class="diconnector" onclick="Disconnect()"> <i class="fa fa-power-off"></i>Sé
+                                    déconnecter</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
         </header>
 
         <main id="main" class="site-main">
+            <div style="height: 70px;">
 
+
+            </div>
             <header class="tg-page-header tg-page-header--both-center">
                 <div class="tg-container tg-container--flex tg-container--flex-center tg-container--flex-space-between">
                     <h1 class="tg-page-header__title">VÉRIFICATION D'IDENTITÉ</h1>
@@ -170,6 +204,7 @@
     <script src="httpsRequester.js"></script>
     <script src="requestRunner.js"></script>
     <script src="connectedCheck.js"></script>
+    <script src="convertisseur.js"></script>
 
 </body>
 
