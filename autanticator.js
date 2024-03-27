@@ -86,7 +86,6 @@ async function Inscription() {
 async function loGin() {
     const phone = document.getElementById('phone').value;
     const password = document.getElementById('password').value;
-    const token = sessionStorage.getItem('oneci');
 
     if (phone != "" && password != "") {
         document.getElementById('connexion').innerHTML = "En cours ...";
