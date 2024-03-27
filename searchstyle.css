@@ -2969,27 +2969,9 @@ select {
 	.hidon {
 		display: none !important
 	}
-
-	.roundSpace {
-		display: block !important;
-	}
-}
-
-.foot-linear-set {
-	border-bottom-right-radius: 10%;
-	border-bottom-left-radius: 10%;
 }
 
 
-.roundSpace {
-	height: 400px;
-	width: 100%;
-	background-color: #028a61;
-	position: absolute;
-	z-index: -1;
-	bottom: -20%;
-	display: none;
-}
 
 .inputBg {
 	background-color: #efeef3 !important;
@@ -3369,6 +3351,12 @@ h6 {
 		display: none;
 	}
 
+	.site-footera {
+		z-index: 999999 !important;
+		position: absolute !important;
+		width: 100%;
+		bottom: -50%;
+	}
 }
 
 
@@ -3385,7 +3373,7 @@ h6 {
 		position: absolute !important;
 		height: 100px !important;
 		width: 100px !important;
-		bottom: 15%;
+		bottom: 25%;
 		right: -50px;
 		display: block;
 		z-index: 0;
