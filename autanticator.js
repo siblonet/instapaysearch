@@ -119,7 +119,6 @@ async function loGin() {
 
             }
 
-
             const splo = response.token.split("°");
             const admin = splo[4];
             window.location.href = admin == "GIFV" ? "dashboard" : "/"
