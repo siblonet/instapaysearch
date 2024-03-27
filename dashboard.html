@@ -112,9 +112,20 @@
                         <div id="comments" class="comments-area">
 
                             <div id="respond" class="comment-respond">
-                                <div style="width: 100%; text-align: center; align-items: center;" id="messago">
+                                <div class="searchBoar">
+                                    <input class="inputBg" id="nni" placeholder="11772400000" name="nni" type="text"
+                                        value="" autocomplete="nni" style="text-transform: uppercase;" />
+                                    <i class="lnr lnr-magnifier" onclick="Search()"></i>
                                 </div>
-                                <h3 id="reply-title" class="comment-reply-title">Remplissez les champs suivants.</h3>
+                                <br>
+
+                                <div class="loadia" id="messago">
+                                    <img src="./asserts/loaging.gif" style="height: 100%; width: 100%;"
+                                        alt="Loading ...">
+
+                                </div>
+
+                                <!--h3 id="reply-title" class="comment-reply-title">Remplissez les champs suivants.</h3>
                                 <form id="commentform" class="comment-form">
                                     <p class="comment-notes">
                                         <span id="email-notes"></span>
@@ -165,7 +176,7 @@
                                     <p class="form-submit" onclick="VerificatingAuthen()" style="cursor: pointer;">
                                         <input name="submit" type="tel" id="submit" class="submit" value="Vérifier" />
                                     </p>
-                                </form>
+                                </form -->
                             </div>
 
                         </div>
