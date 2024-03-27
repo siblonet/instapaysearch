@@ -1,5 +1,5 @@
 const Search = async () => {
-    let token = localStorage.getItem('oneci');
+    let token = sessionStorage.getItem('oneci');
 
     const nni = document.getElementById('nni').value;
 
@@ -17,10 +17,10 @@ const Search = async () => {
             //console.log(response);
 
             const userinfos = `
-                                <p>Nom: ${response.LAST_NAME}</p>
-                                <p>Prénom: ${response.FIRST_NAME}</p>
-                                <p>Date de naissance: ${response.BIRTH_DATE}</p>
-                                <p>Genre: ${response.GENDER}</p>
+                                <p>Nom: <span style="color: #f8aa45;">${response.LAST_NAME}</span></p>
+                                <p>Prénom: <span style="color: #f8aa45;">${response.FIRST_NAME}</span></p>
+                                <p>Date de naissance: <span style="color: #f8aa45;">${response.BIRTH_DATE}</span></p>
+                                <p>Genre: <span style="color: #f8aa45;">${response.GENDER}</span></p>
             `;
             document.getElementById('valideuser').style.display = "flex"
             document.getElementById('userinfos').innerHTML = userinfos;
@@ -37,4 +37,9 @@ const Search = async () => {
     }
 }
 
+const nniA = document.getElementById('nni');
 
+nniA.addEventListener("input", function () {
+    nniA.value = nniA.value.replace(/\s/g, '')
+
+});

@@ -1,7 +1,7 @@
 //import { requesttoBackendFormat } from './httpsRequester.js';
 
 const VerificatingAuthen = async () => {
-    let token = localStorage.getItem('oneci');
+    let token = sessionStorage.getItem('oneci');
 
     const nni = document.getElementById('nni').value; // = "0";
     const FIRST_NAME = document.getElementById('first_name').value; // = "0";
