@@ -241,6 +241,23 @@
     display: none
 }
 
+.valideuser {
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    height: 300px;
+    width: 100%;
+    align-self: center;
+    box-shadow: 0 6px 10px 0 rgba(9, 80, 80, 0.25);
+    overflow: hidden;
+    display: none;
+    padding: 10px;
+}
+
+.valideuser #userinfos {
+    width: 70%;
+    text-align: left;
+}
 
 @media (max-width: 620px) {
     .searchBoar {
