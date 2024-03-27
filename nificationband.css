@@ -295,3 +295,7 @@
         width: 100%;
     }
 }
+
+.dropdown .lnr{
+    padding-right: 12px !important;
+}
