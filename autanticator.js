@@ -86,6 +86,7 @@ async function Inscription() {
 async function loGin() {
     const phone = document.getElementById('phone').value;
     const password = document.getElementById('password').value;
+    const token = localStorage.getItem('oneci');
 
     if (phone != "" && password != "") {
         document.getElementById('connexion').innerHTML = "En cours ...";
@@ -95,7 +96,7 @@ async function loGin() {
             motdepass: password,
         };
 
-        const response = await requesttoBackendJson('POST', `${baseurl}instapay/login/instapay`, person);
+        const response = await requesttoBackendJson('POST', `${baseurl}instapay/${token ? 'login' : 'loginsimple/logio'}/instapay`, person);
 
         if (response && response.ee) {
             const focusedElement = document.activeElement;
@@ -113,7 +114,10 @@ async function loGin() {
 
         } else if (response && response.token) {
             sessionStorage.setItem('tibule', response.token);
-            localStorage.setItem('oneci', response.instapaytoken);
+            if (!token) {
+                localStorage.setItem('oneci', response.instapaytoken);
+
+            }
 
 
             const splo = response.token.split("°");
