@@ -259,6 +259,38 @@
     text-align: left;
 }
 
+
+.valideuser .baima {
+    filter: grayscale(100%);
+    z-index: -1;
+    /* Ensure the background is behind other content */
+    transform: rotate(45deg);
+    /* Rotate the background image by 45 degrees */
+    opacity: 0.2;
+    /* Adjust the opacity value (from 0 to 1) to decrease opacity */
+    position: absolute;
+    height: 50px; 
+    width: 50px;
+    align-self: flex-start;
+}
+
+
+.valideuser .baimb {
+    filter: grayscale(100%);
+    z-index: -1;
+    /* Ensure the background is behind other content */
+    transform: rotate(102deg);
+    /* Rotate the background image by 45 degrees */
+    opacity: 0.2;
+    /* Adjust the opacity value (from 0 to 1) to decrease opacity */
+    position: absolute;
+    height: 50px; 
+    width: 50px;
+    align-self: flex-start;
+    margin-left: 25%;
+    margin-top: 17%;
+}
+
 @media (max-width: 620px) {
     .searchBoar {
         width: 100%;
